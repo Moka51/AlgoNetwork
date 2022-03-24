@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>ALGO Network</title>
+	<meta name="description" content="The PocMon Gaming NFT Ecosystem is designed to meet all kinds of decentraised gaming requests: from NFTs discovery, minting and trading to game currencies exchange, lootboxes and blockchain games store.">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.html">
+
+	<link rel="stylesheet" href="css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+
+</head>
+
+<body>
+
+<header>
+
+    <!-- TOP FIXED MNU -->
+    <div class="top-nav-wrapper d-none d-sm-block">
+        <div class="top-nav">
+            <div class="dnav-section">
+                <div class="dnav-logo">
+                    <a href="index.html"><img src="images/dist/logo.svg" alt="PocMon Logo ($MON)"></a>
+                </div>
+                <div class="dnav-Links d-none d-xl-block"><a href="index.html" class="home-link"><img src="images/dist/home.svg" alt="Pocmon">Home</a></div>
+                <div class="dnav-Links d-none d-lg-block"><a href="#about">Future</a></div>
+                <div class="dnav-Links d-none d-lg-block"><a href="https://pocmoncom.gitbook.io/pocmon/">Tokenomics</a></div>
+                <div class="dnav-Links d-none d-lg-block"><a href="#roadmap">Roadmap</a></div>
+                <div class="dnav-Links d-none d-lg-block">
+                    <nav class="dnav-dropdown">
+                        <a class="dnav-dropbtn">Socials <img src="images/dist/arrow-down.svg" alt="Arrow"></a>
+                        <div class="dnav-dropdown-content">
+                          <a href="https://t.me/pocmoncom" target="_blank">Telegram</a>
+                          <a href="https://twitter.com/pocmoncom" target="_blank">Twitter</a>
+                          <a href="https://pocmon.medium.com/" target="_blank">Medium</a>
+                          <a href="https://www.reddit.com/r/pocmoncom/" target="_blank">Reddit</a>
+                          <a href="https://www.facebook.com/PocMonCom/" target="_blank">Facebook</a>
+                          <a href="https://www.instagram.com/pocmoncom/" target="_blank">Instagram</a>
+                          <a href="https://discord.gg/EzE3pdKYHM" target="_blank">Discord</a>
+                        </div>
+                </nav>
+                </div>
+            </div>
+            <div class="dnav-section">
+                <div class="dnav-Buttons"><a href="https://pocmoncom.gitbook.io/pocmon/" target="_blank" class="btn-inline">Docs</a></div>
+                <div class="dnav-Buttons"><a href="https://pancakeswap.finance/swap?outputCurrency=0x8888818f35bbed1c632364bf1b15446fad088888" target="_blank" class="btn-orange">Pancakeswap</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- MOBILE MNU -->
+    <div class="mobile-mnu d-block d-sm-none">
+        <div class="mobile-nav-flex">
+            <div class="mobile-nav-section">
+                <div class="dnav-logo">
+                    <a href="index.html"><img src="images/dist/logo.svg" alt="PocMon Logo ($MON)"></a>
+                </div>
+            </div>
+            <div class="mobile-nav-section">
+                <a href="#" class="btn-inline">How to buy</a>
+                <a href="https://pancakeswap.finance/swap?outputCurrency=0x8888818f35bbed1c632364bf1b15446fad088888" class="btn-orange">Pancakeswap</a>
+            </div>
+            <div class="mobile-nav-section mobile-mnu-nav">
+                <div id="my-page">
+                    <div id="my-header">
+                        <a href="#my-menu" class="mburger mburger--collapse">
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                        </a>
+
+                        <nav id="my-menu">
+                            <ul>
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Pocenomics</a></li>
+                                <li><a href="#">Roadmap</a></li>
+                                <li><a href="#">Markets</a></li>
+
+                                <li><span>Socials</span>
+                                    <ul>
+                                        <li><a href="https://t.me/pocmonofficial" target="_blank">Telegram</a></li>
+                                        <li><a href="https://twitter.com/pocmoncom" target="_blank">Twitter</a></li>
+                                        <li><a href="https://pocmon.medium.com/" target="_blank">Medium</a></li>
+                                        <li><a href="https://www.reddit.com/r/pocmoncom/" target="_blank">Reddit</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="contact/index.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+	<div class="header-wrap">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12 col-md-8">
+					<div class="offer-wrapper">
+						<h1 class="offer-heading">Algo Network</h1>
+						<p class="offer-description">The ALGO Network is designed to meet all kinds of decentralised requests: from NFTs discovery, scaners, minting and trading currencies exchange.</p>
+						<div class="contract-copy">
+                            <p class="contract-heading" style="font-size: 15px">Token contract : </p>
+                             <a href="https://bscscan.com/address/0x89feac66c5a8ff89800c0e667abbca45dd324b57#code" target="_blank" class="contract-number" style="font-size: 20px">0x89feac66c5a8ff89800c0e667abbca45dd324b57</a>
+                        </div>
+						<a href="https://nft.pocmons.com/" class="btn-general" target="_blank">Swap (Soon)</a>
+                        <a href="https://github.com/Pocmoncom" class="btn-inline" target="_blank"><img src="images/dist/25231_negate.png" style="width: 30px; padding: 0 10px 3px 0;">Github</a>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 ">
+					<div class="loki-wrapper">
+						<div class="loki-wrp-img">
+							<img src="images/dist/FirstBobHotelToken.png" alt="BobHotelPreview">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+    <div class="blur-babble bl-top-right">
+        <img src="images/dist/bl-ball-top-right.png" alt="Gradient Glass">
+    </div>
+
+</header>
+
+<section class="our-concepts">
+<!--     <div class="container">
+        <div class="ugpl">
+            <img src="images/dist/ugol.png" alt="">
+        </div>
+        <div class="row">
+            <div class="col-9 col-sm-5 col-md-4 col-lg-3 col-xl-3">
+                <div class="concept-h4">
+                    <h4>Our Concepts</h4>
+                </div>
+            </div>
+        </div>
+        <div class="concept-wrap">
+            <div class="row">
+                <div class="col-12 col-sm-4">
+                    <div class="concepts-icon">
+                        <div class="concept-img"><img src="images/dist/lootballs.png" alt="Pocmon Lootballs"></div>
+                        <h3 class="concept-heading">Lootballs</h3>
+                        <p class="concept-text">Mint or buy lootboxes containing tokens and NFTs. 100% honest and running on the blockchain</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="concepts-icon">
+                        <div class="concept-img"><img src="images/dist/marketplace.png" alt="Pocmon Marketplace"></div>
+                        <h3 class="concept-heading">NFT Marketplace</h3>
+                        <p class="concept-text">Enjoy an outstanding experience in discovering, minting, trading, and collecting unique blockchain assets</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="concepts-icon">
+                        <div class="concept-img"><img src="images/dist/gameStore.png" alt="Pocmon Game Store"></div>
+                        <h3 class="concept-heading">Game Store</h3>
+                        <p class="concept-text">Choose from a variety of exclusive in-game assets from blockchain game developers partnering PocMon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="blur-babble bl-center-left">
+        <img src="images/dist/bl-ball-left-center.png" alt="Gradient Glass">
+    </div>
+    <div class="blur-babble bl-center-right">
+        <img src="images/dist/bl-ball-right-center.png" alt="Gradient Glass">
+    </div>
+</section>
+
+<section class="logos d-none d-sm-block">
+
+
+    <div class="container">
+        <div class="logos-wrapper">
+
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <div class="logo-partner">
+                        <a href="#"><img src="images/dist/logo-partners/CoinGecko.png" style="width: 143px;" alt="CoinGecko"></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <div class="logo-partner logo-partner-center">
+                        <a href="#"><img src="images/dist/logo-partners/CoinMarket.png" style="width: 141px;" alt="CoinMarket"></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <div class="logo-partner logo-partner-center">
+                        <a href="https://pancakeswap.finance/swap?outputCurrency=0x8888818f35bbed1c632364bf1b15446fad088888"><img src="images/dist/logo-partners/PancakeSwap.png" style="width: 136px;" alt="PancakeSwap"></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <div class="logo-partner logo-partner-center">
+                        <a href="#"><img src="images/dist/logo-partners/bsc.png" style="width: 127px;" alt="BSC Project"></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <div class="logo-partner">
+                        <a href="#"><img src="images/dist/logo-partners/Binance.png" style="width: 148px;" alt="Binance"></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-2">
+                    <div class="logo-partner logo-partner-center">
+                        <a href="https://www.pinksale.finance/"><img src="images/dist/logo-partners/pinksale-logo-text-white.png" style="width: 130px;" alt="logo"></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+<div class="logo-mobile d-block d-sm-none">
+    <div class="logo-image-mobile-partners">
+        <a href="#"><img src="images/dist/logo-partners/bsc.png" alt=""></a>
+    </div>
+    <div class="logo-image-mobile-partners">
+        <a href="#"><img src="images/dist/logo-partners/CoinGecko.png" alt=""></a>
+    </div>
+    <div class="logo-image-mobile-partners">
+        <a href="#"><img src="images/dist/logo-partners/CoinMarket.png" alt=""></a>
+    </div>
+    <div class="logo-image-mobile-partners">
+        <a href="https://www.pinksale.finance/"><img src="images/dist/logo-partners/pinksale-logo-text-white.png" alt=""></a>
+    </div>
+    <div class="logo-image-mobile-partners">
+        <a href="https://pancakeswap.finance/swap?outputCurrency=0x8888818f35bbed1c632364bf1b15446fad088888"><img src="images/dist/logo-partners/PancakeSwap.png" alt=""></a>
+    </div>
+    <div class="logo-image-mobile-partners">
+        <a href="#"><img src="images/dist/logo-partners/Binance.png" alt=""></a>
+    </div>
+</div>
+<a class="anchor" id="about"></a>
+<section class="about-us d-none d-md-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="about-name">
+                    <p class="head-support">ALGO NETWORK PLATFORM</p>
+                    <h2 class="about-heading">The future of Blockchain</h2>
+                    <p class="about-description">The ALGO AMM exchange v1 is a complete fork of PancakeSwap, the factory & router smart contracts are the same as PancakeSwap (we only changed "pancake" to "ALGO" in these two contracts). It means that the contracts where store liquidity (your money) are as safe as PancakeSwap.
+You can use the links below to compare the smart contracts of ALGO and PancakeSwap.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboun-content-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block"></div>
+                <div class="col-7 col-sm-6 col-lg-5">
+                    <div class="about-content">
+                        <h3>ABOUT $ALGO</h3>
+                        <p class="about-h3support ah3s-blue">Why Launch a Degen, and now and utility?</p>
+                        <p class="about-text">The project was launched like a degen, after check the vibes and the community works they deserve more than a simple x2</p>
+                        <a href="https://pocmoncom.gitbook.io/pocmon/" class="btn-inline">Read more about $ALGO On Gitbook</a>
+                    </div>
+                </div>
+                <div class="col-5 col-sm-6 col-lg-5">
+                    <div class="about-img">
+                        <div class="ab-img-wrapper ab-img-howworks">
+                            <img src="images/dist/frankhotel.gif" alt="Welcome to new holders">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="circle-about-left">
+            <img src="images/dist/about-elipse-1.png" alt="Elipse Glass">
+        </div>
+    </div>
+
+    <div class="aboun-content-right d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="d-none d-md-block col-md-6 col-lg-7">
+                    <div class="about-img">
+                        <div class="ab-img-wrapper ab-img-future">
+                            <img src="images/dist/about-img2.png" alt="Algo2">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-6 col-lg-5">
+                    <div class="about-content">
+                        <h3>WHAT'S NEXT?</h3>
+                        <p class="about-h3support ah3s-morengo">Future of $ALGO</p>
+                        <p class="about-text">The evolution of Algo will be driven entirely <br>
+                            by the majority. For the community, by the community.
+                            The project is created to give the max power <br>
+                            to the $ALGO holders, while our current plans <br>
+                            are reflected in the Roadmap</p>
+                        <a href="https:///" class="btn-inline">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="circle-about-right">
+            <img src="images/dist/about-elipse-2.png" alt="Elipse Glass">
+        </div>
+    </div>
+
+    <div class="aboun-content-right d-block d-md-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 col-sm-7">
+                    <div class="about-content">
+                        <h3>WHAT'S NEXT?</h3>
+                        <div class="about-h3support ah3s-morengo">Future of Algo</div>
+                        <p class="about-text">Future of $ALGO</p>
+                        <p class="about-text">The evolution of Algo will be driven entirely <br>
+                            by the majority. For the community, by the community.
+                            The project is created to give the max power <br>
+                            to the $ALGO holders, while our current plans <br>
+                            are reflected in the Roadmap</p>
+                        <a href="#" class="btn-inline">Read more</a>
+                    </div>
+
+                </div>
+                <div class="col-5 col-sm-5">
+                    <div class="about-img">
+                        <div class="ab-img-wrapper ab-img-future">
+                            <img src="images/dist/about-img2flip.png" alt="Algo">
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        </div>
+        </div>
+</section>
+
+<section class="about-us d-block d-md-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="about-name">
+                    <p class="head-support">Buy, sell or Launchpad</p>
+                    <h2 class="about-heading">How it works and Future of PocMon</h2>
+                    <p class="about-description">PocMon is the most ambitious cryptocommunity, reaching the next frontier in the decentralised gaming experience</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboun-content-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-img">
+                        <div class="ab-img-wrapper ab-img-howworks">
+                            <img src="images/dist/frankhotel.gif" alt="Welcome To New Holders">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="about-content">
+                        <h3>ABOUT $ALGO</h3>
+                        <p class="about-h3support ah3s-blue">How it works?</p>
+                        <p class="about-text">$ALGO is the main currency needed for all platform
+                            services. For example,to mint an NFT, create or open
+                            a lootball, one needs to pay a small fee which
+                            is charged in $ALGO</p>
+                        <a href="#" class="btn-inline">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="circle-about-left">
+            <img src="images/dist/about-elipse-1.png" alt="Elipse Glass">
+        </div>
+    </div>
+
+
+
+    <div class="aboun-content-right">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-img">
+                        <div class="ab-img-wrapper ab-img-future">
+                            <img src="images/dist/about-img2flip.png" alt="Algo ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="about-content">
+                        <h3>WHAT'S NEXT?</h3>
+                        <div class="about-h3support ah3s-morengo">Future of PocMon</div>
+                        <p class="about-text">The evolution of PocMon will be driven entirely
+                            by the majority. For the community, by the community.
+                            The project is created to give the max power
+                            to the PocMon holders, while our current plans
+                            are reflected in the Roadmap</p>
+                        <a href="#" class="btn-inline">Read more</a>
+                    </div>
+
+                </div>
+
+        </div>
+        </div>
+        </div>
+</section>
+
+<section class="roadmap">
+    <a class="anchor" id="roadmap"></a>
+    <div class="roadmap-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Roadmap</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="roadmap-cart">
+                        <div class="roadmap-cart-wrap">
+                            <div class="stage">STAGE 0</div>
+                        <div class="name-stage">Marketplace</div>
+                        <ul class="stage-progress">
+                            <li>Marketplace development</li>
+                            <li>Basic marketplace launch</li>
+                            <li>Pocmon charity</li>
+                            <li>Pocmon Universe release</li>
+                            <li>Brand new design</li>
+                            <li>Multilingual localization</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="roadmap-cart">
+                        <div class="roadmap-cart-wrap">
+                            <div class="stage">STAGE 1</div>
+                        <div class="name-stage">NFT Store</div>
+                        <ul class="stage-progress">
+                            <li>NFT Store developmemt</li>
+                            <li>PocMon NFT collection</li>
+                            <li>Gaming NFTs airdrop</li>
+                            <li>Partners' NFTs release</li>
+                            <li>Partnerships with charities</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="roadmap-cart">
+                        <div class="roadmap-cart-wrap">
+                            <div class="stage">STAGE 2</div>
+                        <div class="name-stage">Lootballs</div>
+                        <ul class="stage-progress">
+                            <li>Development of MVP</li>
+                            <li>Fully functional platform</li>
+                            <li>Lootballs airdrop to holders</li>
+                            <li>NFT Lootballs</li>
+                            <li>Coins Lootballs</li>
+                            <li>Lootballs by partners</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="roadmap-cart">
+                        <div class="roadmap-cart-wrap">
+                            <div class="stage">STAGE 3</div>
+                        <div class="name-stage">PocDex</div>
+                        <ul class="stage-progress">
+                            <li>PocGameSwap</li>
+                            <li>PocMon mobile game</li>
+                            <li>PocMon trading card game</li>
+                            <li>Expanding to Ethereum</li>
+                            <li>Further development</li>
+                            <li class="custom-roadmap-1">Expanding to other blockchains</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="road-map-img">
+            <img src="images/dist/roadmap-img.png" alt="Pocmon Road Map">
+        </div>
+    </div>
+</section>
+
+<section class="token-mech">
+    <div class="container">
+        <div class="row">
+            <div class="d-none d-md-block col-md-5 col-lg-7">
+                <div class="TG-QR" id="rec135372713">
+                    <div class="qr-img">
+                        <img src="images/dist/qr.svg" alt="Pocmon telegram QR">
+                    </div>
+                    <div class="qr-text">
+                        Instant Information
+                    </div>
+                    <div class="qr-desc">
+                        Join us in the community <br>
+using the qr code
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 col-lg-5">
+                <h3>Token mechanics</h3>
+                <div class="token-info">
+                    <div class="token-cart">
+                        <div class="token-numbers">
+                            $ALGO
+                            <div class="numbers-stick d-none">
+                                <img src="images/dist/Stick1.png" alt="PocMon">
+                            </div>
+                        </div>
+                        <div class="token-heading">
+                            Our ticker
+                        </div>
+                        <div class="token-description">
+                            As seen on PancakeSwap, XT.com, BKEX.io,<br>
+                            Big.One and other exchanges
+                        </div>
+                    </div>
+                </div>
+                <div class="token-info">
+                    <div class="token-cart">
+                        <div class="token-numbers">
+                            8%
+                            <div class="numbers-stick d-none">
+                                <img src="images/dist/Stick2.png" alt="PocMon">
+                            </div>
+                        </div>
+                        <div class="token-heading">
+                            Total fee
+                        </div>
+                        <div class="token-description">
+                            Every transaction is being taxed a 8% fee, with 6% being spent on $ALGO Marketing, 3% becoming a liquidity pair on Pancake Swap.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="token-info token-info-small">
+                            <div class="token-cart">
+                                <div class="token-numbers" style="font-size: 50px;">
+                                    6%
+                                    <div class="numbers-stick">
+                                        <img src="images/dist/Stick.png" alt="PocMon">
+                                    </div>
+                                </div>
+                                <div class="token-heading" style="font-size: 20px;">
+                                    ALGO mining
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="token-info token-info-small">
+                            <div class="token-cart">
+                                <div class="token-numbers" style="font-size: 50px;">
+                                    3%
+                                    <div class="numbers-stick">
+                                        <img src="images/dist/Stick.png" alt="PocMon">
+                                    </div>
+                                </div>
+                                <div class="token-heading" style="font-size: 20px;">
+                                    Auto liquidity
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="token-info token-info-small">
+                            <div class="token-cart">
+                                <div class="token-numbers" style="font-size: 50px;">
+                                    0%
+                                    <div class="numbers-stick">
+                                        <img src="images/dist/Stick.png" alt="PocMon">
+                                    </div>
+                                </div>
+                                <div class="token-heading" style="font-size: 20px;">
+                                    Rewards to holders, 0 We are not a rewards token! hehe
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="footer-company-name">
+                    <a href="index.html"><img src="images/dist/logo.svg" alt="Pocmon Logo"></a>
+                    <p>Algo Network ($ALGO) is a decentralized community project in Binance Smart Chain, reaching the next frontier in the decentralised experience</p>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-sm-4 col-md-2 col-lg-4">
+                <div class="footer-card-link d-none">
+                    <div class="footer-card-name">
+                        USEFUL LINKS
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="https://">Litepaper</a></li>
+                        <li><a href="https://bscscan.com">BSC contract</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-2">
+                <div class="footer-card-link">
+                    <div class="footer-card-name">
+                        Our Socials
+                    </div>
+                    <ul>
+                        <li><a href="https://t.me/algorithm_inu">Telegram</a></li>
+                        <li><a href="https://twitter.com/TheTokenBakery">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-2">
+                <div class="footer-card-link">
+                    <div class="footer-card-name">
+                        USEFUL LINKS
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="https://pocmoncom.gitbook.io/pocmon/">Litepaper</a></li>
+                        <li><a href="https://bscscan.com/">BSC contract</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="pocmon-seo">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-12">
+                <p>Legal Disclaimer: The “Pokémon” trademark is owned by 4 companies: Nintendo, The Pokémon Company, Game Freak, and Creatures Co Ltd – PocMon neither claims to have the rights to anything tied to the “Pokémon” name , nor does it sell physical or digital products that infringes on the property of any or all of the aforementioned companies.
+                </p>
+                <p>
+                    PocMon’s BSC token itself has nothing to do with the “Pokémon” name and all custom artwork and coding created for PocMon is credited to their creators.                </p>
+                <p>Our token is SAFU.</p>
+            </div>
+            </div>
+        </div>
+            </div>
+        <div class="footer-bg">
+            <img src="images/dist/footer-bg.png" alt="Pocmon">
+        </div>
+</footer>
+
+<script>
+    function myFunction() {
+      var copyText = document.getElementById("cont-num");
+      copyText.select();
+      document.execCommand("copy");
+      alert("Copied contract: " + copyText.value);
+    }
+    </script>
+
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+<!-- Mirrored from pocmons.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Oct 2021 23:45:34 GMT -->
+</html>
